@@ -4,6 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/**********************************\
+*                                  *
+* Andrew Terwilliger 4/28/2020     *
+* Minneapolis College              *
+* ITEC 2505-60 C# Programming      *
+*                                  *
+\**********************************/
+
 namespace PlantSuggest
 {
     class PlantInfo

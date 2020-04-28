@@ -18,16 +18,19 @@ namespace Quiz_Objects
         }
 
         // Internal variables for validating points
-        int _points = 0;
+        private int _points = 0;
 
         // Auto-Implemented Properties 
         public string UserAnswer { get; set; }
         public string QuestionText { get; set; }
         public string CorrectAnswer { get; set; }
         public List<string> WrongAnswers { get; set; }
+
+        // Points method, separate returns for get and set.
         public int Points { get { return _points;  }
             set
             {
+                // Sending the set value to the PointParser method in order to make sure it's positive.
                 _points = PointParser(value);
             }
         }
